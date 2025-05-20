@@ -24,9 +24,9 @@ export default function NavbarAction({ from }) {
                 href={"/"}
                 className={`${
                     from === "mobile"
-                        ? "py-3 px-[90px] rounded-[40px] border-1 border-primary text-center text-primary text-xl"
-                        : "py-3 px-[30px] rounded-[50px] border-1 border-secondary text-center text-secondary text-2xl"
-                } font-semibold leading-tight  hover:bg-secondary hover:text-primary duration-400`}
+                        ? "py-3 px-[90px] rounded-[40px] border-1 border-primary text-center text-primary"
+                        : "py-3 px-[30px] rounded-[50px] border-1 border-secondary text-center text-secondary"
+                } font-semibold leading-tight text-xl hover:bg-secondary hover:text-primary duration-400`}
             >
                 Get Started
             </Link>

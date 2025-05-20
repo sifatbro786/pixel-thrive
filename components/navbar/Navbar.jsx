@@ -5,9 +5,9 @@ import NavigationLink from "./NavigationLink";
 
 export default function Navbar() {
     return (
-        <header className="shadow-xs shadow-gray-500 sticky top-0 z-50 border-b">
+        <header className="shadow-xs shadow-black sticky top-0 z-50 border-b">
             <div className="mx-auto py-5 px-3 md:px-[90px]">
-                <div className="flex items-center h-16">
+                <div className="flex items-center h-10 md:h-16">
                     {/* //* Logo */}
                     <NavbarLogo />
 

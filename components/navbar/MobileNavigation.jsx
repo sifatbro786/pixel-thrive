@@ -64,7 +64,7 @@ export default function MobileNavigation({ toggleMenu, isMenuOpen, setIsMenuOpen
                         exit="closed"
                         variants={sidebarVariants}
                     >
-                        <div className="flex justify-end px-4 pt-10 pb-4">
+                        <div className="flex justify-end px-3 pt-[30px] pb-4">
                             <button onClick={toggleMenu} aria-label="Close menu">
                                 <X size={28} className="text-black" />
                             </button>
