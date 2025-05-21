@@ -2,6 +2,8 @@
 
 @theme {
     --font-istok: "Istok Web", sans-serif;
+    --font-play: "Playfair Display", serif;
+    --font-space: "Space Grotesk", sans-serif;
     --color-primary: #0f0f0f;
     --color-secondary: #b9ff66;
 }

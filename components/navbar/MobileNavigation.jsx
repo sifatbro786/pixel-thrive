@@ -58,7 +58,7 @@ export default function MobileNavigation({ toggleMenu, isMenuOpen, setIsMenuOpen
 
                     {/* //* Sidebar */}
                     <motion.div
-                        className="fixed top-0 right-0 bottom-0 w-full max-w-full bg-white text-black z-50 flex flex-col"
+                        className="fixed top-0 right-0 bottom-0 w-full max-w-full bg-stone-200 text-black z-50 flex flex-col"
                         initial="closed"
                         animate="open"
                         exit="closed"

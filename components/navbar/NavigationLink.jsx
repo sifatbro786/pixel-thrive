@@ -21,7 +21,7 @@ export default function NavigationLink({ href, onSmash, children, from }) {
         if (active) {
             styles = "text-secondary font-semibold border-b-2 border-secondary text-xl";
         } else {
-            styles = "text-white font-medium hover:text-gray-300 duration-300 text-xl";
+            styles = "text-stone-300 font-medium hover:text-gray-300 duration-300 text-xl";
         }
     }
 
