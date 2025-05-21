@@ -14,7 +14,7 @@ export default function NavbarAction({ from }) {
                 {from === "mobile" ? <MobileIcon2 /> : <MobileIcon />}
                 <p
                     className={`${
-                        from === "mobile" ? "text-primary text-xl font-medium" : "text-stone-200"
+                        from === "mobile" ? "text-tertiary text-xl font-medium" : "text-stone-100"
                     }`}
                 >
                     01533504728
@@ -24,9 +24,9 @@ export default function NavbarAction({ from }) {
                 href={"/"}
                 className={`${
                     from === "mobile"
-                        ? "py-3 px-[90px] rounded-[40px] border-1 border-primary text-center text-primary text-xl"
-                        : "py-3 px-[30px] rounded-[50px] border-1 border-secondary text-center text-secondary text-lg"
-                } font-semibold leading-tight bg-transparent hover:bg-secondary hover:text-primary duration-400`}
+                        ? "py-3 px-[90px] rounded-[40px] border-1 border-tertiary text-center text-tertiary text-xl"
+                        : "py-3 px-[30px] rounded-[50px] border-1 border-tertiary text-center text-tertiary text-lg"
+                } font-semibold leading-tight bg-transparent hover:border-secondary hover:bg-secondary hover:text-primary duration-400`}
             >
                 Get Started
             </Link>

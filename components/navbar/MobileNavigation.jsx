@@ -48,7 +48,7 @@ export default function MobileNavigation({ toggleMenu, isMenuOpen, setIsMenuOpen
                 <>
                     {/* //* Backdrop */}
                     <motion.div
-                        className="fixed inset-0 bg-black/40 z-40"
+                        className="fixed inset-0 bg-tertiary/10 z-40"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -58,7 +58,7 @@ export default function MobileNavigation({ toggleMenu, isMenuOpen, setIsMenuOpen
 
                     {/* //* Sidebar */}
                     <motion.div
-                        className="fixed top-0 right-0 bottom-0 w-full max-w-full bg-stone-200 text-black z-50 flex flex-col"
+                        className="fixed top-0 right-0 bottom-0 w-full max-w-full bg-gradient-to-r from-lime-900 to-slate-900 text-tertiary z-50 flex flex-col"
                         initial="closed"
                         animate="open"
                         exit="closed"
@@ -66,7 +66,7 @@ export default function MobileNavigation({ toggleMenu, isMenuOpen, setIsMenuOpen
                     >
                         <div className="flex justify-end px-3 pt-[30px] pb-4">
                             <button onClick={toggleMenu} aria-label="Close menu">
-                                <X size={28} className="text-black" />
+                                <X size={28} className="text-tertiary" />
                             </button>
                         </div>
 

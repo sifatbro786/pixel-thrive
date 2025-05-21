@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
     return (
         <html
             lang="en"
-            className={`${istokWeb.variable} ${playFair.variable} ${spaceGrotesk.variable} bg-primary text-stone-300 font-istok`}
+            className={`${istokWeb.variable} ${playFair.variable} ${spaceGrotesk.variable} bg-primary text-tertiary font-space`}
         >
             <body>
                 <Navbar />

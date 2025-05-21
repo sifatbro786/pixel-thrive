@@ -5,7 +5,7 @@ import NavigationLink from "./NavigationLink";
 
 export default function Navbar() {
     return (
-        <header className="shadow-xs shadow-black sticky top-0 z-50 border-b">
+        <header className="bg-gradient-to-r from-lime-900 to-slate-900 sticky top-0 z-50 border-b">
             <div className="mx-auto py-5 px-3 md:px-[90px]">
                 <div className="flex items-center h-8 md:h-16">
                     {/* //* Logo */}

@@ -3,21 +3,26 @@ import HeroStar from "@/public/HeroStars.png";
 
 export default function HeroSection() {
     return (
-        <div className="flex flex-col md:flex-row justify-between mt-8 md:mt-[80px] px-3 md:px-0">
+        <div className="flex flex-col md:flex-row justify-between mt-10 md:mt-[80px]">
             {/* //* left */}
             <div className="md:mt-1">
-                <div className="text-stone-300 text-5xl text-center md:text-left md:text-9xl font-black uppercase tracking-[4.50px]">
-                    <div className="relative font-play">
-                        C<span>reative</span>
-                        <div>
-                            <div className="w-1.5 h-1.5 md:w-3.5 md:h-3.5 bg-secondary rounded-full absolute top-[-5px] left-9 md:left-5"></div>
-                            <div className="w-1.5 h-1.5 md:w-3.5 md:h-3.5 bg-secondary rounded-full absolute top-[-5px] left-12 md:left-12"></div>
-                        </div>
+                <div className="relative font-play">
+                    <p
+                        className="text-5xl md:text-9xl font-black uppercase tracking-[4.50px] text-center md:text-left bg-clip-text text-transparent overflow-hidden"
+                        style={{
+                            backgroundImage: `url('https://img.freepik.com/premium-photo/modern-office-space-with-creative-twist_343170-33885.jpg?uid=R145339866&ga=GA1.1.1561507910.1747828804&semt=ais_hybrid&w=740')`,
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                        }}
+                    >
+                        C<span>reative Agency</span>
+                    </p>
+
+                    <div>
+                        <div className="hidden md:block w-3.5 h-3.5 bg-secondary rounded-full absolute top-[-5px] left-5"></div>
+                        <div className="hidden md:block w-3.5 h-3.5 bg-secondary rounded-full absolute top-[-5px] left-12"></div>
                     </div>
                 </div>
-                <h1 className="text-stone-300 text-5xl text-center md:text-left md:text-9xl font-black uppercase tracking-[4.50px] pt-2 md:pt-6 font-play">
-                    Agency
-                </h1>
             </div>
 
             {/* //* right */}
@@ -36,7 +41,7 @@ export default function HeroSection() {
                     <Image src={HeroStar} alt="stars" fill />
                 </div>
 
-                <p className="w-auto md:w-[468px] text-justify justify-start text-white text-lg leading-relaxed tracking-wide font-space">
+                <p className="w-auto md:w-[468px] text-justify justify-start text-lg leading-relaxed tracking-wide font-space">
                     A creative agency building websites, boosting brands with digital marketing,
                     designing graphics, and crafting smart UI/UX — everything you need to stand out
                     and grow in the digital world.

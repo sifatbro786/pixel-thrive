@@ -1,4 +1,5 @@
 import HeroSection from "@/components/hero/HeroSection";
+import Milestone from "@/components/milestone/Milestone";
 
 export const metadata = {
     title: "PixelThrive | Home",
@@ -7,8 +8,9 @@ export const metadata = {
 
 export default function Home() {
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto px-3 md:px-0">
             <HeroSection />
+            <Milestone />
         </div>
     );
 }

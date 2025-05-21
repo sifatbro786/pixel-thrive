@@ -12,16 +12,16 @@ export default function NavigationLink({ href, onSmash, children, from }) {
     if (from === "mobile") {
         if (active) {
             styles =
-                "block py-3 text-black hover:text-gray-700 transition-colors text-3xl font-semibold text-center border-b-[3px] border-primary w-fit mx-auto";
+                "block py-3 text-tertiary transition-colors text-3xl font-semibold text-center border-b-[3px] border-tertiary w-fit mx-auto";
         } else {
             styles =
-                "block py-3 text-black hover:text-gray-700 transition-colors text-3xl font-semibold text-center";
+                "block py-3 text-tertiary  transition-colors text-3xl font-semibold text-center";
         }
     } else {
         if (active) {
             styles = "text-secondary font-semibold border-b-2 border-secondary text-xl";
         } else {
-            styles = "text-stone-300 font-medium hover:text-gray-300 duration-300 text-xl";
+            styles = "text-stone-200 font-medium hover:text-gray-300 duration-300 text-xl";
         }
     }
 
