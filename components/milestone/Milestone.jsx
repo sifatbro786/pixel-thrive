@@ -17,7 +17,7 @@ export default function Milestone() {
             <Stats />
 
             {/* //* Banner Image: */}
-            <div className="w-full h-[240px] md:h-[527px] relative mt-10">
+            <div className="w-full h-[240px] md:h-[527px] relative mt-10 md:mt-[60px]">
                 <Image src={BannerImage} alt="BannerImage" fill className="object-cover rounded-md"/>
             </div>
         </div>

@@ -1,7 +1,7 @@
 export default function Stats() {
     const stats = [
         {
-            number: 10,
+            number: 6,
             text: "Success Project",
             horizontal: true,
         },
