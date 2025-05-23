@@ -4,12 +4,12 @@ const messages = ["Discuss your ideas", "Enrich your goal", "Collaborate & creat
 
 export default function Marq() {
     return (
-        <div className="py-5 md:py-16 px-3 md:px-20 my-16 md:my-40 w-full bg-neutral-900 shadow-[1px_1px_54px_24px_rgba(0,0,0,1.00)]">
+        <div className="py-5 md:py-[50px] px-3 md:px-20 my-16 md:my-40 w-full bg-gray-900 shadow-[1px_1px_54px_24px_rgba(0,0,0,0.4)]">
             <Marquee
                 speed={140}
                 autoFill
                 gradient
-                gradientColor="rgb(23,23,23)"
+                gradientColor="rgb(15, 23,42)"
                 gradientWidth={150}
                 className="overflow-hidden"
             >
