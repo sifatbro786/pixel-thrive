@@ -48,7 +48,7 @@ export default function MobileNavigation({ toggleMenu, isMenuOpen, setIsMenuOpen
                 <>
                     {/* //* Backdrop */}
                     <motion.div
-                        className="fixed inset-0 bg-tertiary/10 z-40"
+                        className="fixed inset-0 bg-primary/10 z-40"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -58,7 +58,7 @@ export default function MobileNavigation({ toggleMenu, isMenuOpen, setIsMenuOpen
 
                     {/* //* Sidebar */}
                     <motion.div
-                        className="fixed top-0 right-0 bottom-0 w-full max-w-full bg-zinc-800/80 backdrop-blur-md text-tertiary z-50 flex flex-col"
+                        className="fixed top-0 right-0 bottom-0 w-full max-w-full bg-primary text-tertiary z-50 flex flex-col"
                         initial="closed"
                         animate="open"
                         exit="closed"

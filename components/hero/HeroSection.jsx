@@ -3,7 +3,7 @@ import HeroStar from "@/public/HeroStars.png";
 
 export default function HeroSection() {
     return (
-        <div className="flex flex-col md:flex-row justify-between mt-10 md:mt-[80px]">
+        <div className="max-w-7xl mx-auto px-3 md:px-0 flex flex-col md:flex-row justify-between mt-10 md:mt-[110px]">
             {/* //* left */}
             <div className="md:mt-1">
                 <div className="relative font-play">

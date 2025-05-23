@@ -5,7 +5,7 @@ import BannerImage from "@/public/BannerImage.jpg";
 
 export default function Milestone() {
     return (
-        <div className="my-20 md:my-[200px] w-full flex flex-col">
+        <div className="max-w-7xl mx-auto px-3 md:px-0 mt-20 md:mt-[200px] w-full flex flex-col">
             <TopHeading
                 heading={"Milestone"}
                 paragraph={
