@@ -1,6 +1,7 @@
 import HeroSection from "@/components/hero/HeroSection";
 import Marq from "@/components/marq/Marq";
 import Milestone from "@/components/milestone/Milestone";
+import Service from "@/components/service/Service";
 
 export const metadata = {
     title: "PixelThrive | Home",
@@ -13,6 +14,7 @@ export default function Home() {
             <HeroSection />
             <Milestone />
             <Marq />
+            <Service />
         </>
     );
 }

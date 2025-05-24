@@ -1,9 +1,14 @@
 import Image from "next/image";
 import HeroStar from "@/public/HeroStars.png";
+import { cn } from "@/lib/utils";
 
 export default function HeroSection() {
     return (
-        <div className="max-w-7xl mx-auto px-3 md:px-0 flex flex-col md:flex-row justify-between mt-10 md:mt-[110px]">
+        <div
+            className={cn(
+                "max-w-7xl mx-auto px-3 md:px-0 flex flex-col md:flex-row justify-between mt-10 md:mt-[110px]",
+            )}
+        >
             {/* //* left */}
             <div className="md:mt-1">
                 <div className="relative font-play">
@@ -42,8 +47,8 @@ export default function HeroSection() {
                 </div>
 
                 <p className="w-auto md:w-[468px] text-justify justify-start text-lg leading-relaxed tracking-wide font-space">
-                    A creative agency building websites, boosting brands with digital marketing,
-                    designing graphics, and crafting smart UI/UX — everything you need to stand out
+                    A creative agency building softwares, apps, boosting brands with digital marketing,
+                    designing graphics, and crafting UI/UX — everything you need to stand out
                     and grow in the digital world.
                 </p>
             </div>
