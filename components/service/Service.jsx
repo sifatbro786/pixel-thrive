@@ -6,9 +6,9 @@ import { Button } from "../ui/button";
 
 export default function Service() {
     return (
-        <div
+        <section
             className={cn(
-                "max-w-7xl mx-auto px-3 md:px-0 my-20 md:my-[150px] w-full flex flex-col",
+                "max-w-7xl mx-auto px-3 md:px-0 mt-20 md:mt-[150px] w-full flex flex-col"
             )}
         >
             <TopHeading
@@ -22,8 +22,8 @@ export default function Service() {
 
             {/* //* view all button: */}
             <Link href={"/services"} className="mx-auto mt-8 md:mt-16">
-                <Button className={"font-semibold"}>View All Services</Button>
+                <Button className={"font-semibold md:text-base"}>View All Services</Button>
             </Link>
-        </div>
+        </section>
     );
 }

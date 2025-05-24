@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export default function Milestone() {
     return (
-        <div
+        <section
             className={cn(
                 "max-w-7xl mx-auto px-3 md:px-0 mt-20 md:mt-[200px] w-full flex flex-col",
             )}
@@ -30,6 +30,6 @@ export default function Milestone() {
                     className="object-cover rounded-md"
                 />
             </div>
-        </div>
+        </section>
     );
 }

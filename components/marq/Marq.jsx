@@ -8,7 +8,7 @@ const messages = ["Discuss your ideas", "Enrich your goal", "Collaborate & creat
 export default function Marq() {
     return (
         <>
-            <div
+            <section
                 className={cn(
                     "py-5 md:py-[50px] px-3 md:px-20 mt-16 md:mt-40 w-full bg-gray-900 shadow-[1px_1px_54px_24px_rgba(0,0,0,0.4)]",
                 )}
@@ -30,7 +30,7 @@ export default function Marq() {
                         </h3>
                     ))}
                 </Marquee>
-            </div>
+            </section>
             <div className="w-10 md:w-14 h-10 md:h-14 mx-auto relative mt-8 md:mt-[40px]">
                 <Image src={Star} alt="star-icon" fill />
             </div>

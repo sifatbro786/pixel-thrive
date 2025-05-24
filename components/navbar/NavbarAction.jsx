@@ -20,16 +20,9 @@ export default function NavbarAction({ from }) {
                     01533504728
                 </p>
             </div>
-            <Link
-                href={"/"}
-                className={`${
-                    from === "mobile"
-                        ? "py-3 px-[90px] rounded-[40px] border-1 border-tertiary text-center text-tertiary text-xl"
-                        : "py-3 px-[30px] rounded-[50px] border-1 border-tertiary text-center text-tertiary text-lg"
-                } font-semibold leading-tight bg-transparent hover:border-secondary hover:bg-secondary hover:text-primary duration-400`}
-            >
+            <button className=" px-6 py-2 bg-transparent border border-tertiary hover:border-secondary text-tertiary rounded-lg font-bold hover:bg-secondary hover:text-primary cursor-pointer transform hover:-translate-y-1 transition duration-400">
                 Get Started
-            </Link>
+            </button>
         </div>
     );
 }

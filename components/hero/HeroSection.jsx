@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 export default function HeroSection() {
     return (
-        <div
+        <section
             className={cn(
                 "max-w-7xl mx-auto px-3 md:px-0 flex flex-col md:flex-row justify-between mt-10 md:mt-[110px]",
             )}
@@ -52,6 +52,6 @@ export default function HeroSection() {
                     and grow in the digital world.
                 </p>
             </div>
-        </div>
+        </section>
     );
 }
