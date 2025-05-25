@@ -1,12 +1,22 @@
+"use client";
 import Image from "next/image";
 import ContactIcon from "@/public/contact2.png";
 import { Button } from "../ui/button";
+import { useEffect, useState } from "react";
 
 export default function ContactShowcase() {
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) return null; // Prevents rendering on server
+
     return (
         <div className="flex flex-col-reverse md:flex-row md:gap-10 items-center justify-between">
             {/* //* Form */}
-            <form className="w-full md:w-[45%] text-tertiary space-y-6">
+            <form className="w-full md:w-[45%] text-[#e6e6e6] space-y-6">
                 <div>
                     <label htmlFor="name" className="block text-sm mb-1.5">
                         Full Name
@@ -15,7 +25,7 @@ export default function ContactShowcase() {
                         type="text"
                         id="name"
                         placeholder="Your name"
-                        className="w-full p-3 border rounded-lg bg-transparent outline-none border-secondary placeholder:text-[#cccccc]"
+                        className="w-full p-3 border rounded-lg bg-transparent outline-none border-[#b9ff66] placeholder:text-[#cccccc]"
                     />
                 </div>
                 <div>
@@ -26,7 +36,7 @@ export default function ContactShowcase() {
                         type="email"
                         id="email"
                         placeholder="Your email"
-                        className="w-full p-3 border rounded-lg bg-transparent outline-none border-secondary placeholder:text-[#cccccc]"
+                        className="w-full p-3 border rounded-lg bg-transparent outline-none border-[#b9ff66] placeholder:text-[#cccccc]"
                     />
                 </div>
                 <div>
@@ -35,14 +45,14 @@ export default function ContactShowcase() {
                     </label>
                     <textarea
                         id="description"
-                        rows="6"
+                        rows={6}
                         placeholder="Tell us about your project..."
-                        className="w-full p-3 border rounded-lg bg-transparent outline-none border-secondary placeholder:text-[#cccccc]"
+                        className="w-full p-3 border rounded-lg bg-transparent outline-none border-[#b9ff66] placeholder:text-[#cccccc]"
                     />
                 </div>
                 <Button
                     type="submit"
-                    className="w-full py-3 md:py-5 font-semibold uppercase bg-secondary text-primary rounded-lg hover:opacity-90 transition"
+                    className="w-full py-3 md:py-5 font-semibold uppercase bg-[#b9ff66] text-black rounded-lg hover:opacity-90 transition"
                 >
                     Send Message
                 </Button>
