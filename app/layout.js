@@ -2,6 +2,7 @@ import { Playfair_Display, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/footer/Footer";
 
 export const metadata = {
     title: "PixelThrive",
@@ -33,7 +34,8 @@ export default function RootLayout({ children }) {
         >
             <body>
                 <Navbar />
-                <main>{children}</main>
+                <main className="min-h-screen">{children}</main>
+                <Footer />
             </body>
         </html>
     );
