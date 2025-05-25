@@ -2,10 +2,9 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { X } from "lucide-react";
 import { GrayStar, GreenDiamond, SpiralAroundCircle, StartBurstShape } from "../SVG/SVGIcons";
+import { cn } from "@/lib/utils";
+import PopupForm from "./PopupForm";
 
 export default function Proposal() {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -15,10 +14,12 @@ export default function Proposal() {
 
     return (
         <>
-            <div
-                className={`max-w-7xl mx-auto px-5 md:px-10 mt-20 md:mt-[200px] w-full flex relative my-32 bg-tertiary rounded-3xl py-5 md:py-10 justify-between items-center overflow-hidden`}
+            <section
+                className={cn(
+                    "max-w-7xl mx-auto px-5 md:px-10 mt-20 md:mt-[200px] w-full flex relative bg-tertiary rounded-3xl py-5 md:py-10 justify-between items-center",
+                )}
             >
-                {/* Left content */}
+                {/* //* Left content */}
                 <div className="max-w-md z-10">
                     <h2 className="text-[22px] md:text-3xl font-bold mb-4 text-primary">
                         Let's make things happen
@@ -32,7 +33,7 @@ export default function Proposal() {
                     </Button>
                 </div>
 
-                {/* Right decorative elements */}
+                {/* //* Right decorative elements */}
                 <div className="relative h-48 w-48 hidden md:block">
                     {/* Star burst shape */}
                     <div className="absolute top-0 right-0">
@@ -51,7 +52,7 @@ export default function Proposal() {
                     </div>
 
                     {/* Green diamond */}
-                    <div className="absolute bottom-0 left-8">
+                    <div className="absolute bottom-[-3px] left-[40px]">
                         <GreenDiamond />
                     </div>
 
@@ -60,78 +61,10 @@ export default function Proposal() {
                         <GrayStar />
                     </div>
                 </div>
-            </div>
+            </section>
 
-            {/* Popup Form */}
-            {isPopupOpen && (
-                <div className="fixed inset-0 flex items-center justify-center z-50">
-                    <div
-                        className="absolute inset-0 bg-primary bg-opacity-50"
-                        onClick={closePopup}
-                    ></div>
-                    <div className="bg-white rounded-lg px-5 py-10 md:p-8 shadow-2xl w-full max-w-lg z-10 relative">
-                        <button
-                            onClick={closePopup}
-                            className="absolute top-4 right-4 text-primary hover:text-gray-700"
-                        >
-                            <X size={24} />
-                        </button>
-
-                        <h3 className="text-xl md:text-2xl font-bold mb-6 text-center text-primary">
-                            Get Your Free Proposal
-                        </h3>
-
-                        <form className="space-y-6">
-                            <div>
-                                <label
-                                    htmlFor="name"
-                                    className="block text-sm md:text-base font-medium text-gray-700 mb-1"
-                                >
-                                    Name
-                                </label>
-                                <Input
-                                    id="name"
-                                    placeholder="Write your name or Your Company name"
-                                    className="w-full text-sm md:text-base text-primary p-3 md:p-5 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-900 focus:border-transparent"
-                                />
-                            </div>
-
-                            <div>
-                                <label
-                                    htmlFor="subject"
-                                    className="block text-sm md:text-base font-medium text-gray-700 mb-1"
-                                >
-                                    Subject
-                                </label>
-                                <Input
-                                    id="subject"
-                                    placeholder="Write your proposal subject"
-                                    className="w-full text-sm md:text-base p-3 md:p-5 border text-primary border-gray-300 rounded-md focus:ring-2 focus:ring-gray-900 focus:border-transparent"
-                                />
-                            </div>
-
-                            <div>
-                                <label
-                                    htmlFor="description"
-                                    className="block text-sm md:text-base font-medium text-gray-700 mb-1"
-                                >
-                                    Description
-                                </label>
-                                <Textarea
-                                    id="description"
-                                    placeholder="Please write the details you want"
-                                    className="w-full text-sm md:text-base p-3 md:p-5 border text-primary border-gray-300 rounded-md focus:ring-2 focus:ring-gray-900 focus:border-transparent"
-                                    rows={4}
-                                />
-                            </div>
-
-                            <Button variant={"link"} type="submit" className="w-full">
-                                Submit
-                            </Button>
-                        </form>
-                    </div>
-                </div>
-            )}
+            {/* //* Popup Form */}
+            {isPopupOpen && <PopupForm closePopup={closePopup} />}
         </>
     );
 }

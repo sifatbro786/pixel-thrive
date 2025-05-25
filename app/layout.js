@@ -1,4 +1,4 @@
-import { Istok_Web, Playfair_Display, Space_Grotesk } from "next/font/google";
+import { Playfair_Display, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { cn } from "@/lib/utils";
