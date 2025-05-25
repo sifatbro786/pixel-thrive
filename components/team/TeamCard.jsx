@@ -14,7 +14,7 @@ export function TeamCard() {
             src: Man3,
         },
         {
-            quote: "Builds and maintains both front-end and back-end systems, ensuring user experiences and robust functionality.",
+            quote: "Builds and maintains both front-end and back-end systems, ensuring seamless user experiences and robust functionality.",
             name: "Ishaq ahmed",
             designation: "Full Stack Developer",
             src: Man1,
