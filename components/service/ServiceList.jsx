@@ -16,7 +16,7 @@ export default function ServiceList({ showAll }) {
     ];
 
     return (
-        <div className="grid grid-cols-1 w-full mx-auto md:grid-cols-2 md:gap-x-8 gap-y-10 md:gap-y-14 mt-10 md:mt-[80px]">
+        <div className="grid grid-cols-1 w-full mx-auto md:grid-cols-2 md:gap-x-8 gap-y-8 md:gap-y-14 mt-10 md:mt-[80px]">
             {displayServices.length > 0 ? (
                 displayServices.map(({ title, slug, shortDescription, icon }, index) => (
                     <ServiceCard

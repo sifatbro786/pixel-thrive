@@ -125,7 +125,7 @@ const services = [
         slug: "ui-ux-design",
         icon: uix,
         shortDescription:
-            "We create intuitive, user-centered UI/UX designs that enhance usability, engage users, and elevate your brand through seamless digital experiences across all platforms.",
+            "We create intuitive, user-centered UI/UX designs that enhance usability, engage users, and elevate your brand through  digital experiences across all platforms.",
         subtitle: "Intuitive interfaces that users love",
         description:
             "Our UI/UX design services focus on creating digital experiences that are both visually appealing and easy to use. We follow a user-centered design approach, conducting research and testing to ensure that your digital products meet user needs and business objectives.",

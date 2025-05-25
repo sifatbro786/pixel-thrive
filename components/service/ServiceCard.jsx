@@ -30,14 +30,14 @@ export default function ServiceCard({ title, slug, description, icon, colorSchem
         >
             <div className="p-6 h-full w-full flex flex-col justify-between items-start">
                 <h4
-                    className={`inline-block text-xl md:text-2xl mx-auto md:mx-0 px-3 md:px-2.5 py-1 md:py-0.5 rounded-md font-bold w-fit ${titleStyles[colorScheme]}`}
+                    className={`inline-block text-xl md:text-2xl mx-auto md:mx-0 px-3 md:px-2.5 py-0.5 md:py-0.5 rounded-md font-bold w-fit ${titleStyles[colorScheme]}`}
                 >
                     {title}
                 </h4>
 
                 {icon && (
                     <div className="mb-6 flex items-center gap-x-4 mx-auto md:mx-0">
-                        <p className="md:lg:xl:text-xl text-justify md:block hidden">
+                        <p className="md:lg:xl:text-xl md:block hidden">
                             {description}
                         </p>
                         <Image
@@ -45,7 +45,7 @@ export default function ServiceCard({ title, slug, description, icon, colorSchem
                             alt={`${title}-icon`}
                             width={200}
                             height={100}
-                            className="object-cover md:lg:xl:py-0 py-5 h-[250px] w-[200px] md:w-auto md:h-auto"
+                            className="object-cover md:lg:xl:py-0 py-5 h-auto w-[50%] md:w-[25%] md:h-full mx-auto md:mx-0"
                         />
                     </div>
                 )}
