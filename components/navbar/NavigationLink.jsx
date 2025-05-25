@@ -12,7 +12,7 @@ export default function NavigationLink({ href, onSmash, children, from }) {
     if (from === "mobile") {
         if (active) {
             styles =
-                "block py-3 text-tertiary transition-colors text-3xl font-semibold text-center border-b-[3px] border-tertiary w-fit mx-auto";
+                "block py-3 text-secondary transition-colors text-3xl font-semibold text-center w-fit mx-auto underline underline-offset-8";
         } else {
             styles =
                 "block py-3 text-tertiary  transition-colors text-3xl font-semibold text-center";

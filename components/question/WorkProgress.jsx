@@ -98,7 +98,7 @@ export default function WorkProgress() {
                                 transition={{ duration: 0.3, ease: "easeInOut" }}
                             >
                                 <div className="px-6 pb-6 pt-0">
-                                    <div className="border-t border-primary/70 pt-4">
+                                    <div className="border-t border-primary/50 pt-4">
                                         <p className="text-primary text-sm md:text-base font-medium text-justify">
                                             {step.content}
                                         </p>

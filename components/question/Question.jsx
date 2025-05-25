@@ -4,7 +4,7 @@ import WorkProgress from "./WorkProgress";
 
 export default function Question() {
     return (
-        <section className={cn("max-w-7xl mx-auto px-3 md:px-0 mt-20 md:mt-[180px]")}>
+        <section className={cn("max-w-7xl mx-auto px-3 md:px-0 mt-24 md:mt-[180px]")}>
             <TopHeading
                 heading={"Our Working Process"}
                 paragraph={

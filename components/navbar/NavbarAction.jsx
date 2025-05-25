@@ -14,13 +14,13 @@ export default function NavbarAction({ from }) {
                 {from === "mobile" ? <MobileIcon2 /> : <MobileIcon />}
                 <p
                     className={`${
-                        from === "mobile" ? "text-tertiary text-xl font-medium" : "text-stone-100"
+                        from === "mobile" ? "text-yellow-500 text-xl font-medium" : "text-stone-100"
                     }`}
                 >
                     01533504728
                 </p>
             </div>
-            <button className=" px-6 py-2 bg-transparent border border-tertiary hover:border-secondary text-tertiary rounded-lg font-bold hover:bg-secondary hover:text-primary cursor-pointer transform hover:-translate-y-1 transition duration-400">
+            <button className="px-10 py-2 bg-transparent text-secondary border border-secondary hover:border-secondary rounded-lg font-bold hover:bg-secondary hover:text-primary cursor-pointer transform hover:-translate-y-1 transition duration-400">
                 Get Started
             </button>
         </div>

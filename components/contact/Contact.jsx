@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <section
             className={cn(
-                "max-w-7xl mx-auto px-3 md:px-0 mt-20 md:mt-[200px] overflow-x-hidden",
+                "max-w-7xl mx-auto px-3 md:px-0 mt-24 md:mt-[200px] overflow-x-hidden",
             )}
         >
             <TopHeading
