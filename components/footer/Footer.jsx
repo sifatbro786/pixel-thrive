@@ -4,7 +4,7 @@ import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "luc
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-800 bg-fixed mt-20 md:mt-[100px] overflow-x-hidden">
+        <footer className="bg-slate-800 bg-fixed overflow-x-hidden">
             <div className="max-w-7xl mx-auto px-3 md:px-0 py-8 md:py-12">
                 <div className="flex flex-col md:flex-row items-start justify-center md:justify-between">
                     <div>

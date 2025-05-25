@@ -18,6 +18,7 @@ export default function HeroSection() {
                             backgroundImage: `url('https://img.freepik.com/premium-photo/modern-office-space-with-creative-twist_343170-33885.jpg?uid=R145339866&ga=GA1.1.1561507910.1747828804&semt=ais_hybrid&w=740')`,
                             backgroundRepeat: "no-repeat",
                             backgroundSize: "cover",
+                            backgroundPosition: "center",
                         }}
                     >
                         C<span>reative Agency</span>
@@ -47,9 +48,9 @@ export default function HeroSection() {
                 </div>
 
                 <p className="w-auto md:w-[468px] text-justify justify-start text-lg leading-relaxed tracking-wide font-space">
-                    A creative agency building softwares, apps, boosting brands with digital marketing,
-                    designing graphics, and crafting UI/UX — everything you need to stand out
-                    and grow in the digital world.
+                    A creative agency building softwares, apps, boosting brands with digital
+                    marketing, designing graphics, and crafting UI/UX — everything you need to stand
+                    out and grow in the digital world.
                 </p>
             </div>
         </section>

@@ -20,7 +20,7 @@ export default function NavbarAction({ from }) {
                     01533504728
                 </p>
             </div>
-            <button className="px-10 py-2 bg-transparent text-secondary border border-secondary hover:border-secondary rounded-lg font-bold hover:bg-secondary hover:text-primary cursor-pointer transform hover:-translate-y-1 transition duration-400">
+            <button className={`${from === "mobile" ? "px-16 text-lg" : "px-10"} py-2 bg-transparent text-secondary border border-secondary hover:border-secondary rounded-lg font-bold hover:bg-secondary hover:text-primary cursor-pointer transform hover:-translate-y-1 transition duration-400`}>
                 Get Started
             </button>
         </div>
