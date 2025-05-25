@@ -1,9 +1,10 @@
+import { cn } from "@/lib/utils";
 
 
 export default function Footer() {
     return (
-        <div>
+        <footer className={cn("")}>
             Footer
-        </div>
+        </footer>
     );
 }

@@ -1,9 +1,14 @@
 import { cn } from "@/lib/utils";
 import TopHeading from "../common/TopHeading";
+import ContactShowcase from "./ContactShowcase";
 
 export default function Contact() {
     return (
-        <section className={cn("max-w-7xl mx-auto px-3 md:px-0 my-20 md:my-[200px]")}>
+        <section
+            className={cn(
+                "max-w-7xl mx-auto px-3 md:px-0 mt-20 md:mt-[200px] overflow-x-hidden",
+            )}
+        >
             <TopHeading
                 heading={"Contact"}
                 paragraph={
@@ -11,7 +16,7 @@ export default function Contact() {
                 }
             />
 
-            
+            <ContactShowcase />
         </section>
     );
 }

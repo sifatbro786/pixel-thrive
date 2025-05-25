@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
             className={cn(
                 playFair.className,
                 spaceGrotesk.className,
-                "bg-primary text-tertiary font-space",
+                "bg-primary text-tertiary font-space overflow-x-hidden lg:overflow-x-auto",
             )}
         >
             <body>

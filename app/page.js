@@ -1,4 +1,5 @@
 import Contact from "@/components/contact/Contact";
+import Footer from "@/components/footer/Footer";
 import HeroSection from "@/components/hero/HeroSection";
 import Marq from "@/components/marq/Marq";
 import Milestone from "@/components/milestone/Milestone";
@@ -25,6 +26,7 @@ export default function Home() {
             <Proposal />
             <Question />
             <Contact />
+            {/* <Footer /> */}
         </>
     );
 }

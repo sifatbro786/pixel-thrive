@@ -1,7 +1,8 @@
 import Image from "next/image";
 import TopHeading from "../common/TopHeading";
 import Stats from "./Stats";
-import BannerImage from "@/public/BannerImage.jpg";
+// import BannerImage from "@/public/BannerImage.jpg";
+// import CreativeVideo from "@/public/video.mp4";
 import { cn } from "@/lib/utils";
 
 export default function Milestone() {
@@ -22,12 +23,14 @@ export default function Milestone() {
             <Stats />
 
             {/* //* Banner Image: */}
-            <div className="w-full h-[240px] md:h-[527px] relative mt-10 md:mt-[60px]">
-                <Image
-                    src={BannerImage}
-                    alt="BannerImage"
-                    fill
-                    className="object-cover rounded-md"
+            <div className="w-full h-[240px] md:h-[527px] relative mt-10 md:mt-[60px] rounded-md overflow-hidden">
+                <video
+                    src="/video.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
                 />
             </div>
         </section>
