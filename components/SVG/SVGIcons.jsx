@@ -71,3 +71,100 @@ export const MobileIcon2 = () => {
         </svg>
     );
 };
+
+export const StartBurstShape = () => {
+    return (
+        <svg
+            width="120"
+            height="120"
+            viewBox="0 0 120 120"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M60 0L70 50L120 60L70 70L60 120L50 70L0 60L50 50L60 0Z"
+                stroke="black"
+                strokeWidth="1"
+                fill="oklch(0.21 0.034 264.665)"
+            />
+        </svg>
+    );
+};
+
+export const SpiralAroundCircle = () => {
+    return (
+        <svg
+            width="112"
+            height="112"
+            viewBox="0 0 112 112"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <ellipse
+                cx="56"
+                cy="56"
+                rx="55"
+                ry="30"
+                stroke="oklch(0.21 0.034 264.665)"
+                strokeWidth="1"
+                transform="rotate(0 56 56)"
+            />
+            <ellipse
+                cx="56"
+                cy="56"
+                rx="45"
+                ry="25"
+                stroke="oklch(0.21 0.034 264.665)"
+                strokeWidth="1"
+                transform="rotate(45 56 56)"
+            />
+            <ellipse
+                cx="56"
+                cy="56"
+                rx="35"
+                ry="20"
+                stroke="oklch(0.21 0.034 264.665)"
+                strokeWidth="1"
+                transform="rotate(90 56 56)"
+            />
+        </svg>
+    );
+};
+
+export const GreenDiamond = () => {
+    return (
+        <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <rect
+                x="20"
+                y="0"
+                width="28"
+                height="28"
+                transform="rotate(45 20 0)"
+                fill="oklch(0.21 0.034 264.665)"
+            />
+        </svg>
+    );
+};
+
+export const GrayStar = () => {
+    return (
+        <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M20 0L25 15L40 20L25 25L20 40L15 25L0 20L15 15L20 0Z"
+                fill="oklch(0.21 0.034 264.665)"
+            />
+        </svg>
+    );
+};

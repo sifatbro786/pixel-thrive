@@ -43,8 +43,8 @@ export const AnimatedTeams = ({ testimonials, autoplay = false }) => {
     if (!hasMounted) return null;
 
     return (
-        <div className="mx-auto max-w-sm px-4 md:px-0 mt-10 md:mt-[100px] font-sans antialiased md:max-w-7xl">
-            <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
+        <div className="mx-auto px-3 md:px-0 mt-10 md:mt-[100px] font-sans antialiased md:max-w-7xl">
+            <div className="relative grid grid-cols-1 gap-8 md:gap-20 md:grid-cols-2">
                 <div>
                     <div className="relative h-80 w-full">
                         <AnimatePresence>
@@ -106,7 +106,7 @@ export const AnimatedTeams = ({ testimonials, autoplay = false }) => {
                         <p className="text-sm text-yellow-300 dark:text-neutral-500">
                             {testimonials[active].designation}
                         </p>
-                        <motion.p className="mt-8 text-lg text-gray-400 dark:text-neutral-300">
+                        <motion.p className="mt-6 md:mt-8 text-lg text-gray-400 dark:text-neutral-300 h-[150px] md:h-0">
                             {testimonials[active].quote.split(" ").map((word, index) => (
                                 <motion.span
                                     key={index}
@@ -124,7 +124,7 @@ export const AnimatedTeams = ({ testimonials, autoplay = false }) => {
                             ))}
                         </motion.p>
                     </motion.div>
-                    <div className="flex gap-4 pt-12 md:pt-0">
+                    <div className="flex gap-4 mt-8 md:mt-0">
                         <button
                             onClick={handlePrev}
                             className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"

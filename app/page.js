@@ -2,6 +2,7 @@ import HeroSection from "@/components/hero/HeroSection";
 import Marq from "@/components/marq/Marq";
 import Milestone from "@/components/milestone/Milestone";
 import Project from "@/components/project/Project";
+import Proposal from "@/components/proposal/Proposal";
 import Service from "@/components/service/Service";
 import Team from "@/components/team/Team";
 
@@ -19,6 +20,7 @@ export default function Home() {
             <Service />
             <Project />
             <Team />
+            <Proposal />
         </>
     );
 }
