@@ -1,8 +1,5 @@
-import Image from "next/image";
 import TopHeading from "../common/TopHeading";
 import Stats from "./Stats";
-// import BannerImage from "@/public/BannerImage.jpg";
-// import CreativeVideo from "@/public/video.mp4";
 import { cn } from "@/lib/utils";
 
 export default function Milestone() {
@@ -31,6 +28,7 @@ export default function Milestone() {
                     muted
                     playsInline
                     className="w-full h-full object-cover"
+                    
                 />
             </div>
         </section>

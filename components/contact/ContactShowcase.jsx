@@ -1,18 +1,9 @@
-"use client";
 import Image from "next/image";
 import ContactIcon from "@/public/contact2.png";
 import { Button } from "../ui/button";
-import { useEffect, useState } from "react";
+import { getBlurImage } from "@/utils/getBlurImage";
 
 export default function ContactShowcase() {
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) return null; // Prevents rendering on server
-
     return (
         <div className="flex flex-col-reverse md:flex-row md:gap-10 items-center justify-between">
             {/* //* Form */}
@@ -65,6 +56,8 @@ export default function ContactShowcase() {
                     src={ContactIcon}
                     alt="Contact Us"
                     className="w-full object-cover rounded-lg"
+                    placeholder="blur"
+                    blurDataURL={getBlurImage()}
                 />
             </div>
         </div>
